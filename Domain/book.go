@@ -27,7 +27,7 @@ type Book struct {
 }
 
 type BorrowRequest struct {
-	ID     primitive.ObjectID `json:"id"`
+	ID     primitive.ObjectID `json:"id" bison:"_id,omitempty"`
 	BookID primitive.ObjectID `json:"book_id"`
 	UserID primitive.ObjectID `json:"user_id"`
 	Status StatusType         `json:"status"`
