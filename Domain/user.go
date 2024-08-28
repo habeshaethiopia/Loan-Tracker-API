@@ -55,6 +55,7 @@ type UserUsecase interface {
 	UpdatePasswordAfterReset(ctx context.Context, token, newPassword string) interface{}
 	GetAllUsers(ctx context.Context, id string) interface{}
 	DeleteUserAccount(ctx context.Context, userID string, adminId string) interface{}
+	IsAdmin(ctx context.Context, userID string) bool
 }
 
 type UserRepository interface {

@@ -19,6 +19,18 @@ type userUsecase struct {
 	contextTimeout time.Duration
 }
 
+// IsAdmin implements domain.UserUsecase.
+func (u *userUsecase) IsAdmin(ctx context.Context, userID string) bool {
+	user, err := u.userRepository.GetUserByID(ctx, userID)
+	if err != nil {
+		return false
+	}
+	if user.Role == "admin" {
+		return true
+	}
+	return false
+}
+
 // DeleteUserAccount implements domain.UserUsecase.
 func (u *userUsecase) DeleteUserAccount(ctx context.Context, userID string, adminId string) interface{} {
 	admin, err := u.userRepository.GetUserByID(ctx, adminId)

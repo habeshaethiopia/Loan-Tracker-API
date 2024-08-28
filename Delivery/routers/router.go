@@ -11,5 +11,6 @@ func Router(R *gin.Engine, env infrastructure.Config, client *mongo.Database) {
 
 	userroute := R.Group("")
 	UserRouter(userroute, *client, env)
-
+	BorrowRouter(userroute, *client, env)
+	BookRouter(R, env, *client)
 }

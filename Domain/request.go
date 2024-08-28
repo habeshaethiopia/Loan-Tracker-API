@@ -32,3 +32,6 @@ type TokenRefreshRequest struct {
 type RefreshTokenRequest struct {
 	RefreshToken string `json:"refresh_token"`
 }
+type UpdateBorrowRequest struct {
+	Status StatusType `json:"status"`
+}
