@@ -8,12 +8,13 @@ import (
 
 	"gopkg.in/gomail.v2"
 )
+var EmailEnv Config // Remove the line that references loadEnv()
 
 const (
 	SmtpHost      = "smtp.gmail.com"        // Correct SMTP server for Gmail
 	SmtpPort      = 465                     // Port for SMTPS (SSL/TLS)
 	EmailFrom     = "adanemoges6@gmail.com" // Your Gmail address
-	EmailPassword = "nqcbzwothtmiedus"      // Your app-specific password
+	EmailPassword = "hunawngdqdyvtbvk"      // Your app-specific password
 	ServerHost    = "http://localhost:8080" // Change to your domain in production
 	TokenTTlL     = time.Hour               // Token Time-To-Live
 )
