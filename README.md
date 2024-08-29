@@ -75,6 +75,3 @@ For more details, refer to the [API Documentation](doc/doc.md).
 ## License
 
 This project is licensed under the MIT License. See the [`LICENSE`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fadane%2FRepository%2FLoan-Tracker-API%2FLICENSE%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D "/home/adane/Repository/Loan-Tracker-API/LICENSE") file for details.
-```
-
-Make sure to replace `yourusername` with your actual GitHub username and update the environment variables with your actual values.
